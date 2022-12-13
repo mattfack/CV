@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[utf8]{inputenc}
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Matteo Facchini}}\vspace{1.5em} % Your name
+	
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Born in Trento (Italy),}}{February 11, 1988} % Birthplace and date
+
+\NewEntry{}{citizen of Italy} % citizenship
+
+\NewEntry{address}{via vittime delle foibe, 40, I-38121, Trento} % Home address
+
+\NewEntry{email}{\href{mailto:mat.facchini@gmail.com}{mat.facchini@gmail.com}} % Email address
+
+\NewEntry{LinkedIn}{\href{https://www.linkedin.com/in/matteo-facchini-1098a393}{https://www.linkedin.com/in/matteo-facchini}}
+
+\NewEntry{phone}{(O) +39 0461 282448\ \ $\cdotp$\ \ (M) +39 340 2304434} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+%
+%\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+%
+%\Description{Gain fundamental experience in my area of interest and expertise.}\vspace{2em} % Goal text
+
+
+
+%%----------------------------------------------------------------------------------------
+%%	EDUCATION
+%%----------------------------------------------------------------------------------------
+%
+%\spacedlowsmallcaps{Education}\vspace{1em}
+%
+%\NewEntry{2013-Present}{ETH Zurich, Switzerland}
+%
+%\Description{\MarginText{PhD}Laboratory of Hydraulics, Hydrology and Glaciology (VAW)\newline 
+%	Description: I work on monitoring and modeling the eco-morphological effects of a sediment bypass tunnel (SBT) on the downstream river reach.\newline
+%	Advisors: Prof.~Robert M. \textsc{Boes} \& Dr.~Annunziato \textsc{Siviglia}}
+%
+%%------------------------------------------------
+%
+%\NewEntry{2010-2013}{Università degli Studi di Trento, Italy}
+%
+%\Description{\MarginText{Master Degree}Environmental and Land Engineering\newline 
+%Thesis: \textit{High order ADER-WENO finite volume schemes for Boussinesq-type equations}\newline
+%Advisor: Assoc. Prof.~Michael \textsc{Dumbser}}
+%
+%%------------------------------------------------
+%
+%\NewEntry{2011-2012}{Technische Univerität Dresden, Germany}
+%
+%\Description{\MarginText{Erasmus Exchange}Civil and Environmental Engineering\newline}
+%
+%%------------------------------------------------
+%
+%\NewEntry{2007-2010}{Università degli Studi di Trento, Italy}
+%
+%\Description{\MarginText{Bachelor Degree}Environmental Engineering\newline
+%Thesis: \textit{Aspetti dei deflussi di pioggia: dilavamento di superfici stradali e rischi per i bacini limitrofi}\newline
+%Advisors: Assoc. Prof.~Sandra \textsc{Dirè} \& Assoc. Prof.~Maurizio \textsc{Righetti}}
+%
+%%------------------------------------------------
+%
+%\vspace{1em} % Extra space between major sections
+%
+%%----------------------------------------------------------------------------------------
+%%	WORK EXPERIENCE
+%%----------------------------------------------------------------------------------------
+%
+%\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+%
+%\NewEntry{2013--Present}{PhD Candidate, \textsc{ETH Zurich}  --- Zurich (Switzerland)}
+%
+%\Description{\MarginText{ETH Zurich}Monitoring and modeling of downstream effects of Sediment Bypass Tunnel (SBT) releases at an alpine stream.}
+%
+%%------------------------------------------------
+%
+%\NewEntry{2013--Present}{Software Developer, \textsc{ETH Zurich}  --- Zurich (Switzerland)}
+%
+%\Description{\MarginText{ETH Zurich}Software development of BASEMENT (Basic Simulation Environment for Computation of Environmental Flow and Natural Hazard Simulation), a software used in river engineering modeling.}
+%
+%%------------------------------------------------
+%
+%\NewEntry{Jan-Mar 2013}{Faculty Advisor, \textsc{LEONARDO Formazione e Sviluppo} --- Catania (Italy)}
+%
+%\Description{\MarginText{LEONARDO}Tutoring students going to simulate a session of the United Nations (National Model United Nations, NMUN) in New York.}
+%
+%%------------------------------------------------
+%
+%\NewEntry{2010--2011}{Sound and Lights Technician, \textsc{Opera Universitaria} --- Trento (Italy)}
+%
+%\Description{\MarginText{Op. Univ. TN}Sound and light technician at Opera Universitaria cultural events, such as theater, concerts and movies.}
+%
+%%%%------------------------------------------------
+%%
+%%\NewEntry{2005--2007}{Employee, \textsc{Istituto Comprensivo Trento 3} --- Trento (Italy)}
+%%
+%%\Description{\MarginText{Ist. Comp. TN3}Data implementation: results of assessment questionnaires concerning teaching quality at the institute.}
+%
+%%------------------------------------------------
+%
+%\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Publications}\vspace{1em}
+
+\Description{\MarginText{2019}
+	M. \textsc{Facchini}, ~R.M. \textsc{Boes}, ~D.F. \textsc{Vetsch}, ~A.\textsc{Siviglia} (2019), Riverbed and surface composition adjustments in a gravel-bed river subject to repeated Sediment Bypass Tunnel operations, under review.}
+
+%------------------------------------------------
+
+\Description{\MarginText{2017}
+	M. \textsc{Facchini}, ~A. \textsc{Siviglia}, ~R. M. \textsc{Boes}, (2017), Downstream morphological effects of SBT releases: 1D numerical study and preliminary LiDAR data analysis, In: Proceedings of the 2$^{nd}$ International Workshop on Sediment Bypass Tunnels (T. Sumi ed.), Kyoto University, Kyoto, Japan.}
+
+	\Description{
+	M. \textsc{Döring}, ~M. \textsc{Facchini}, ~S. \textsc{Fink}, ~M. J.\textsc{Franca}, ~E. \textsc{Martín Sanz}, ~Ch. \textsc{Robinson}, ~Ch. \textsc{Scheidegger}, ~A. \textsc{Siviglia}, ~C. \textsc{Trautwein}, ~D. \textsc{Vetsch}, ~Ch. \textsc{Weber}, (2017), Dinamica dei sedimenti e misurazione dei suoi effetti. In: Dinamica dei sedimenti e degli habitat. Ufficio federale dell’ambiente (UFAM), Berna. Scheda 2.}
+
+	\Description{
+	M. \textsc{Facchini}, ~E. \textsc{Martín Sanz}, ~S. \textsc{Fink}, ~D. \textsc{Vetsch}, ~Ch. \textsc{Robinson}, ~M. \textsc{Döring}, ~A. \textsc{Siviglia}, ~Ch. \textsc{Scheidegger}, ~R. M. \textsc{Boes}, (2017), Gallerie bypass dei sedimenti e piene artificiali. In: Dinamica dei sedimenti e degli habitat. Ufficio federale dell’ambiente (UFAM), Berna. Scheda 6.}
+
+%------------------------------------------------
+
+\Description{\MarginText{2016}
+	M. \textsc{Dumbser}, ~M. \textsc{Facchini}, (2016), A space-time discontinuous Galerkin method for Boussinesq- type equations, Applied Mathematics and Computation, 272(2): 336-346.}
+
+%------------------------------------------------
+
+\Description{\MarginText{2015}
+	M. \textsc{Facchini}, ~A. \textsc{Siviglia}, ~R.M. \textsc{Boes}, (2015), Downstream morphological impact of a sediment bypass tunnel – preliminary results and forthcoming actions, In: Proc. First International Workshop on Sediment Bypass Tunnels, VAW Mitteilungen 232, ETH Z\"urich, Schweiz, 137-146.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%%----------------------------------------------------------------------------------------
+%%	CONFERENCES AND COURSES
+%%----------------------------------------------------------------------------------------
+%
+%\spacedlowsmallcaps{Conferences and Courses Attended:}\vspace{1em}
+%
+%\Description{\MarginText{2016}Summer School on Fluvial Geomorphology, Losone (Switzerland), June 27 - July 1, 2016.}
+%
+%\Description{\MarginText{2015}Introduction to Writing at Doctoral Level, Natural Science \& Engineering, C1 level, Fall Semester 2015.}
+%
+%\Description{\MarginText{}International Workshop on Sediment Bypass Tunnels, Zurich (Switzerland), April 27 - April 29, 2015.}
+%
+%\Description{\MarginText{2014}European Geoscience Conference General Assembly, Vienna (Austria), April 27- May 2, 2014.}
+%
+%\Description{\MarginText{}Post-graduate Course on Advanced Numerical Methods for Hyperbolic Equations and Applications, Trento (Italy), February 3 - February 14, 2014.}
+%
+%\Description{\MarginText{}Post-graduate Course on Basic Interdisciplinary River Morphodynamics: First Edition, River Bars, Trento (Italy), October 27 - October 31, 2014.}
+%
+%%------------------------------------------------
+%
+%\vspace{1em} % Extra space between major sections
+
+%%----------------------------------------------------------------------------------------
+%%	PERSONAL SKILLS
+%%----------------------------------------------------------------------------------------
+%
+%\spacedlowsmallcaps{Personal Skills}\vspace{1em}
+%
+%\vspace{1em}
+%
+%\Description{\MarginText{Communication skills}Participating actively to my hometown life through cultural associations, I learned the importance of interaction with other people and of peaceful communication inside a group. These associations are the Town Marching Band ("Corpo Musicale Città di Trento") of which I have been counselor, the Orchestra "I Filarmonici" of which I have been counselor, and the music school "I Minipolifonici" of which I have been an active member. Moreover I learned how to work in a team as I have been Students' Delegate at High School and at University.}
+%
+%\Description{\MarginText{Organizational skills}I learned how to deal with times and deadlines, even with different tasks at the same time through several experiences outside my work field (i.e. counselor in the board of two cultural associations, active student and member of a music school, twice students' spokesman at high school and at university, sound and lights technician at cultural events such as concerts, theater, and cinema).}
+%
+%\Description{\MarginText{Technology-related skills}I currently use every sort of technological device at home, including audiovisual equipment and professional equipments thanks to the work conducted with the Opera Universitaria in Trento and to the intense concert activity carried out in the whole Trentino Region and in Italy.}
+%
+%\Description{\MarginText{Digital competence}I can use OS X, Windows and Ubuntu very well. I can use some computer programming languages, used for mathematical and engineering purposes (Python, Fortran, and Matlab mainly). I can use other engineering softwares like Comsol Multiphysics, Maple, HecRas, ANSYS CFX. I can perfectly use platforms such as wiki, chat, blog, search engines.}
+%
+%%------------------------------------------------
+%
+%\vspace{1em}
+%
+%\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+%\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+%
+%\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{Italian}}\ \ $\cdotp$\ \ \ Native}
+%
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%\Description{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Fluent}
+%
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%\Description{\parbox{\langbox}{\textsc{German}}\ \ $\cdotp$\ \ \ Fluent}
+%
+%\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%%------------------------------------------------
+%
+%\Description{\MarginText{Interests}Percussions\ \ $\cdotp$\ \ Music\ \ $\cdotp$\ \ Sports\ \ $\cdotp$\ \ Reading\ \ $\cdotp$\ \ Movies}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
