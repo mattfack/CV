@@ -1,0 +1,23 @@
+# ignore folders
+# 02_backwater_bedload/input/**
+# 02_backwater_bedload/input/old/**
+# 02_backwater_bedload/__pycache__/**
+# 02_backwater_bedload/output/**
+# 02_backwater_bedload/output/old/**
+# 02_backwater_bedload/backup/**
+# 03_raster/[OLD]
+# 09_SediNet
+# 99_Udemy/
+# **_pycache__**
+# ignore files
+.DS_Store
+**/.DS_Store
+.#*
+*.out
+**/.out
+*.aux
+**/.aux
+*.log
+**/.log
+*.synctex.gz
+**/.synctex.gz
