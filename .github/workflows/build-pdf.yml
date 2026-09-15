@@ -1,0 +1,43 @@
+name: Build CV PDF
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '.github/workflows/build-pdf.yml'
+    branches:
+      - master
+      - deedy-template
+  pull_request:
+    paths:
+      - 'src/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install LaTeX and dependencies
+      run: |
+        apt-get update
+        apt-get install -y texlive-xetex texlive-latex-extra texlive-fonts-recommended texlive-lang-italian
+    
+    - name: Compile CV with XeLaTeX
+      working-directory: ./src
+      run: |
+        xelatex -interaction=nonstopmode cv_main.tex
+        xelatex -interaction=nonstopmode cv_main.tex
+    
+    - name: Create output directory
+      run: mkdir -p output
+    
+    - name: Copy PDF to output directory
+      run: cp src/cv_main.pdf output/CV_Matteo_Facchini_IT.pdf
+    
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: CV_PDF
+        path: output/CV_Matteo_Facchini_IT.pdf

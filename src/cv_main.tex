@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Matteo Facchini - Curriculum Vitae
+% Deedy Resume - Modern Two-Column Layout
+% XeLaTeX Template
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+% TITLE
+\namesection{Matteo}{Facchini}{
+  \urlstyle{same}
+  \href{mailto:matteo.facchini@distrettoalpiorientali.it}{matteo.facchini@distrettoalpiorientali.it} |
+  \href{tel:+393402304434}{+39 340 230 4434}
+}
+
+% Use multicols for two-column layout
+\begin{multicols}{2}
+
+% LEFT COLUMN
+{\raggedright
+\input{sections/01_personal}
+
+\input{sections/02_education}
+
+\input{sections/03_experience}
+
+% RIGHT COLUMN
+\columnbreak
+
+\input{sections/03-1_coursework}
+
+\input{sections/06_skills}
+
+\input{sections/04_publications}
+
+\input{sections/05_conferences}
+
+}
+\end{multicols}
+
+\end{document}
