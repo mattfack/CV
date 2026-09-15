@@ -1,25 +1,28 @@
-# ignore folders
-# 02_backwater_bedload/input/**
-# 02_backwater_bedload/input/old/**
-# 02_backwater_bedload/__pycache__/**
-# 02_backwater_bedload/output/**
-# 02_backwater_bedload/output/old/**
-# 02_backwater_bedload/backup/**
-# 03_raster/[OLD]
-# 09_SediNet
-# 99_Udemy/
-# **_pycache__**
-# ignore files
-.DS_Store
-**/.DS_Store
-.#*
-*.pdf
-**/.pdf
-*.out
-**/.out
+# LaTeX build artifacts
 *.aux
-**/.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
 *.log
-**/.log
+*.out
+*.pdf
 *.synctex.gz
-**/.synctex.gz
+texput.log
+
+# macOS
+.DS_Store
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Generated output
+output/
+build/
+
+# Temporary files
+*~
+*.tmp
