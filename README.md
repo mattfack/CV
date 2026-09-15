@@ -101,22 +101,3 @@ build/
 *~
 *.tmp
 ```
-
-## Benefits of This Structure
-
-✅ **Clear organization** — Easy to find and update sections  
-✅ **Modular content** — Edit one section without touching others  
-✅ **Reusable styling** — Maintain consistent formatting via `preamble.tex`  
-✅ **Version control** — Only source files in git, not build artifacts  
-✅ **Scalability** — Easy to add new sections or language versions  
-✅ **Maintainability** — Professional structure that grows with you  
-
-## Next Steps
-
-1. Create the `src/` directory structure with modular `.tex` files
-2. Move active CV content into `sections/` files
-3. Create `assets/images/` and consolidate photos
-4. Move old versions to `archive/`
-5. Update `.gitignore`
-6. Remove root-level PDFs and old images
-7. Update README.md with build instructions
