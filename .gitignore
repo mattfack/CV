@@ -9,6 +9,7 @@
 *.out
 *.pdf
 *.synctex.gz
+*.synctex
 texput.log
 
 # macOS
