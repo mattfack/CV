@@ -91,6 +91,9 @@ Last Updated on \today
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
+\newcommand{\descriptADB}[1]{
+\color{subheadings}\raggedright\scshape\fontsize{11pt}{13pt}\selectfont {#1 } \normalfont}
+
 % Location command
 \newcommand{\location}[1]{
 \color{headings}\raggedright\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
